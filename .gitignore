@@ -1,0 +1,94 @@
+# ========================================
+# Python & Data Projects
+# ========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# PyCharm
+.idea/
+
+# VS Code settings
+.vscode/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Test, coverage & logs
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+test-results.xml
+
+# MyPy and Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Environment files / Secrets
+.env
+.env.*
+*.env
+secrets.*
+credentials.*
+token.*
+
+# Jupyter runtime (if you're running notebooks)
+~$*
+*.nbconvert.ipynb
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux trash
+.Trash-*
+
+# Local logs
+*.log
+logs/
+
+# Node (in case any frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+*~
+
+# Optional: compiled notebooks (rendered outputs)
+*.nb.html
+
