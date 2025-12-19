@@ -1,9 +1,9 @@
 from typing import Dict, Any
 import logging
+from pydantic import BaseModel, Field
 from ..llm.llm_factory import get_llm
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
 
 logger = logging.getLogger(__name__)
 

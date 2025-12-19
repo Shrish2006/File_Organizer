@@ -3,8 +3,7 @@ import logging
 from ..llm.llm_factory import get_llm
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
-
+from pydantic import BaseModel, Field
 logger = logging.getLogger(__name__)
 
 class GroupingAgent:
