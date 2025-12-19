@@ -1,4 +1,3 @@
-# file_organizer/tools/extraction/pdf_extractor.py
 from .base_extractor import BaseExtractor
 from pathlib import Path
 

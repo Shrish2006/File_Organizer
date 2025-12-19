@@ -1,4 +1,3 @@
-# file_organizer/tools/extraction/base_extractor.py
 from abc import ABC, abstractmethod
 from pathlib import Path
 import logging

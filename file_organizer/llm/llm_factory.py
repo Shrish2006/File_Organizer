@@ -1,4 +1,3 @@
-# file_organizer/llm/llm_factory.py
 from langchain_ollama import ChatOllama
 from typing import Optional
 

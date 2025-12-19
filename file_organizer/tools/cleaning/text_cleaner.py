@@ -1,4 +1,3 @@
-# file_organizer/tools/cleaning/text_cleaner.py
 import re
 import logging
 from typing import Dict, Any

@@ -1,4 +1,3 @@
-# file_organizer/tools/metadata/metadata_generator.py
 import re
 import logging
 from typing import Dict, Any, Optional

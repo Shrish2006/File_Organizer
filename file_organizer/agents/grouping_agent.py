@@ -1,4 +1,3 @@
-# file_organizer/agents/grouping_agent.py
 from typing import Dict, Any, List, Optional
 import logging
 from ..llm.llm_factory import get_llm

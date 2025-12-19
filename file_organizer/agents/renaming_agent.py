@@ -1,4 +1,3 @@
-# file_organizer/agents/renaming_agent.py
 import re
 import logging
 from pathlib import Path

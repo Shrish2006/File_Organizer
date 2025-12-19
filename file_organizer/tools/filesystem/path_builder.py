@@ -1,4 +1,3 @@
-# file_organizer/tools/path_builder.py
 import os
 import re
 from pathlib import Path

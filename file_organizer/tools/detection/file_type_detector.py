@@ -1,4 +1,3 @@
-# file_organizer/tools/detection/file_type_detector.py
 import mimetypes
 from pathlib import Path
 import logging

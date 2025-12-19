@@ -1,4 +1,3 @@
-# file_organizer/tools/filesystem/zip_builder.py
 import os
 import zipfile
 import logging

@@ -1,4 +1,3 @@
-# file_organizer/tools/extraction/ppt_extractor.py
 from .base_extractor import BaseExtractor
 
 class PPTExtractor(BaseExtractor):

@@ -1,4 +1,3 @@
-# file_organizer/tools/filesystem/file_mover.py
 import shutil
 import logging
 from pathlib import Path
