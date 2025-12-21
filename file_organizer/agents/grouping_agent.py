@@ -21,29 +21,59 @@ class GroupingAgent:
         # Define the prompt template
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", """
-            You are an expert at organizing files into logical folder structures.
-            Based on the document's category and content, suggest a folder path.
-            
-            Rules:
-            1. Use forward slashes (/) as path separators
-            2. Maximum depth is {max_depth} levels
-            3. Keep folder names short (1-2 words)
-            4. Use only alphanumeric characters and underscores
-            5. Start with the category name
-            6. Be specific but concise
-            
-            Example outputs:
-            - "Academics/Computer_Science/Lectures"
-            - "Business/Finance/Reports/Q1"
-            - "Personal/Taxes/2023"
+            You are a folder path generation engine.
+
+            Your task is to output ONLY a folder path.
+            Do NOT explain your reasoning.
+            Do NOT include sentences, comments, or extra text.
+            Do NOT repeat instructions.
+            Do NOT include words like "based_on", "i_suggest", or "folder_path".
+
+            If your output is not a valid folder path, it is INVALID.
+
+            Output format (MANDATORY):
+            <folder_name>/<subfolder_name>/...
+
             """),
             ("human", """
+            Generate a logical folder path using the rules below.
+
+            STRICT RULES (MUST FOLLOW):
+            1. Output ONLY the folder path — nothing else
+            2. Use forward slashes (/) as separators
+            3. Maximum depth: {max_depth} folders (do NOT exceed)
+            4. Folder names must be 1–2 words each
+            5. Use ONLY lowercase alphanumeric characters and underscores
+            6. Start with the category name
+            7. Be specific but concise
+            8. Do NOT explain or justify the path
+            9. Do NOT include phrases like:
+            - based_on
+            - i_suggest
+            - suggested
+            - folder
+            - path
+            - document
+            - content
+
+            GOOD OUTPUT EXAMPLES:
+            academics/linguistics/grammar  
+            business/finance/reports  
+            personal/taxes/2023  
+
+            BAD OUTPUT (NEVER DO THIS):
+            Based_on_the_document_xyz  
+            I_suggest_the_following_path_xyz  
+            Here_is_the_folder_path_xyz  
+
+            INPUT:
             Category: {category}
-            
+
             Document Content:
             {content}
-            
-            Suggested folder path ({max_depth} levels max):
+
+            FINAL OUTPUT:
+
             """)
         ])
         
