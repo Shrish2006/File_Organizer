@@ -296,3 +296,6 @@ if __name__ == "__main__":
         print("\nErrors encountered:")
         for error in results['errors']:
             print(f"- {error}")
+
+
+#python -m file_organizer.main --input_dir file_organizer/input_files
